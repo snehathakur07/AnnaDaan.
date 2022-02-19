@@ -1,0 +1,201 @@
+body {
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: white;
+  overflow-y: scroll;
+}
+
+@keyframes colorchange {
+  0% {
+    border: 3px solid rgb(0, 217, 255);
+  }
+  20% {
+    border: 3px solid palevioletred;
+  }
+  40% {
+    border: 3px solid green;
+  }
+  60% {
+    border: 3px solid yellow;
+  }
+  80% {
+    border: 3px solid orangered;
+  }
+  100% {
+    border: 3px solid rgb(0, 217, 255);
+  }
+}
+
+@keyframes text-shadow {
+  0% {
+    text-shadow: 0 0 10px rgb(0, 217, 255);
+  }
+  20% {
+    text-shadow: 0 0 10px palevioletred;
+  }
+  40% {
+    text-shadow: 0 0 10px green;
+  }
+  60% {
+    text-shadow: 0 0 10px yellow;
+  }
+  80% {
+    text-shadow: 0 0 10px orangered;
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(0, 217, 255);
+  }
+}
+
+h1 {
+  color: white;
+  font-family: "Amita", cursive;
+  font-size: 90px;
+  position: relative;
+  bottom: 15px;
+  margin: 0;
+  margin-left: 10%;
+  animation-name: text-shadow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#information {
+  color: white;
+  margin: 50px;
+}
+
+.container {
+  background-color: rgb(24, 105, 116);
+  opacity: 75%;
+  width: 350px;
+  position: absolute;
+  left: 70%;
+  top: 50px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+i {
+  position: relative;
+  top: 5px;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  margin: 0;
+  padding-top: 10px;
+  color: white;
+}
+
+i:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 8px lightgray;
+}
+
+a i {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  opacity: 10%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+}
+
+.heading-background {
+  background-color: rgba(0, 0, 0, 0.678);
+  position: sticky;
+  height: 150px;
+  border-radius: 30px;
+}
+
+#heading2 {
+  font-size: 50px;
+  font-family: "Franklin Gothic", sans-serif;
+}
+
+#introduction,
+#About_us,
+#ourwork {
+  width: 95%;
+  background-color: rgba(46, 46, 46, 0.603);
+  position: relative;
+  top: 50px;
+  left: 2%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  font-family: "Bahnschrift", sans-serif;
+}
+
+#image {
+  border-radius: 30px;
+  margin-left: 1;
+  margin-top: 4%;
+  background-color: rgba(46, 46, 46, 0.603);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#image img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+#movement {
+  margin-left: 38%;
+  margin-bottom: 10px;
+}
+
+#login {
+  margin-left: 16px;
+  background-color: lightgray; /* Green */
+  border: 2px solid lightgray;
+  color: black;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#login:hover {
+  border: 2px solid lightgray;
+  background: none;
+  color: white;
+}
+
+#attraction {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 16px 32px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 175px;
+  display: block;
+  font-size: 25px;
+  border: 2px solid white;
+  text-shadow: none;
+  border-radius: 20px;
+}
+
+#attraction:hover {
+  cursor:pointer;
+  border: 2px solid white;
+  color: white;
+  text-shadow: 0 0 8px gray;
+  background:none;
+}

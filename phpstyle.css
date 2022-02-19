@@ -1,0 +1,83 @@
+body {
+  background-image: url("background2.jpg");
+  background-size: cover;
+  color: white;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  color: white;
+  font-family: "Amita", cursive;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 0 0 16px black;
+  margin-top: 0;
+  padding: 0;
+}
+.heading-background {
+  background-image: url("photos/slide-2.jpg");
+  position: relative;
+  border-radius: 30px;
+  margin-bottom: 0;
+  box-shadow: 0 0 20px white;
+}
+
+#container {
+  width: 500px;
+  height: 410px;
+  background-color: rgba(99, 99, 99, 0.411);
+  border-radius: 0 0 50px 50px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+}
+
+#options {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#options span {
+  width: 50%;
+  padding: 8px 74px;
+  margin: 0;
+  border-radius: 8px;
+  background-color: rgb(24, 105, 116);
+  color: white;
+  cursor: pointer;
+}
+
+#options span.button_active {
+  border: 2px solid white;
+  background: white;
+  font-size: 20px;
+  color: black;
+}
+
+#form1,
+#form2 {
+  font-size: 18px;
+}
+
+input {
+  border-radius: 10px;
+  height: 15px;
+}
+
+input[type="submit"] {
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  float: right;
+}
+
+textarea {
+  border-radius: 5px;
+  height: 40px;
+}

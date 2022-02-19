@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" type="image/x-icon" href="wheat.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Dancing+Script:wght@700&family=Lobster&display=swap"
+    rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/franklin-gothic" rel="stylesheet" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet" />
+    <link rel="stylesheet" href="phpstyle.css">
+</head>
+<body>
+<div class="heading-background">
+        <img src="wheat.png" width="80px" style="
+            position: absolute;
+            top: 25px;
+            left: 10px;
+            border-radius: 50%;
+        " />
+        <a href="index.html"><h1 ><b>अन्नदान</b></h1></a>
+    </div>
+
+    <div id="options">
+        <span  id="donor"><b>Join as Donor</b></span>
+        <span class="button_active" id="ngo"><b>Join as ngo</b></span>
+    </div><br>
+    <div id="container">
+    <form method="post" target ="_blank" action="http://localhost/donor.php" id="form1">
+        Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" autofocus><br><br>
+        Phone no.: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phoneno"><br><br>
+        Email ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="emailid"><br><br>
+        Create Password: &nbsp;&nbsp;<input type="password" name="createpassword"><br><br>
+        Confirm Password: <input type="text" name="confirmpassword"><br><br>
+        Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address"></textarea><br><br>
+        
+
+        <input type ="submit">
+    </form>
+
+    <form method="post" action="http://localhost/ngo.php" id="form2" style="display:none">
+        Name of Charitable Trust(Optional): <input type="text" name="namecharitable"><br><br>
+        Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br>
+        Phone NO.: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phoneno"><br><br>
+        Email ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="emailid"><br><br>
+        Website(Optional): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="url" name="website"><br><br>
+        Create password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="createpassword"><br><br>
+        Confirm password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="confirmpassword"><br><br>
+        Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address"></textarea>
+        City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select name ="city">
+            <option value="agra">Agra</option>
+            <option value="chandigarh">chandigarh</option>
+            <option value="Jammu">Jammu</option>
+            <option value="amritsar">Amritsar</option>
+            <option value="ludhiana">Ludhiana</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="kernal">Kernal</option>
+            <option value="Meerut">Meerut</option>
+            <option value ="muradabaad">Muradabaad</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="hamirpur">Hamirpur</option>
+            <option value="Kanpur">Kanpur</option>
+        </select><br>
+        <input type="submit">
+    </form>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#donor").click(function() {
+                $("#donor").removeClass("button_active");
+                $("#ngo").addClass("button_active");
+                $("#form1").show();
+                $("#form2").hide();
+            });
+            $("#ngo").click(function() {
+                $("#donor").addClass("button_active");
+                $("#ngo").removeClass("button_active");
+                $("#form1").hide();
+                $("#form2").show();
+            });
+        });
+    </script>
+</body>
+</html>

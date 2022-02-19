@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-color: rgb(240, 226, 226);
+    color: white;
+  }
+  .container {
+    border: 2px solid white;
+    background: rgba(95, 95, 95, 0.274);
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    width: 460px;
+    box-shadow: 0 0 16px white;
+  }
+  
+  .container h1 {
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid rgb(177, 169, 177);
+    margin-bottom: 23px;
+    padding: 13px 30px;
+    color: white;
+    width: 400px;
+  }
+  .box {
+    width: 100%;
+    border-bottom: 2px solid rgb(177, 169, 177);
+    margin: 32px 0px;
+  }
+  .box input {
+    background: none;
+    width: 76%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .box i {
+    width: 25px;
+  
+    text-align: center;
+  }
+  .btn {
+    cursor: pointer;
+    outline: none;
+  
+    margin: 12px 14px;
+    padding: 10px 21px;
+    border-radius: 10px;
+    border: 2px solid rgb(133, 125, 133);
+    border-radius: 13px;
+    font-size: 18px;
+    background: none;
+    color: white;
+  }
+
+  #login {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 900;
+  }
+
+  select {
+    margin-left: 10px;
+    padding: 4px 16px;
+    box-shadow: 4px 4px 16px black;
+    border-radius: 10px;
+    font-size: 16px;
+  }
